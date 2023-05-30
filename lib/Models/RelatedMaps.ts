@@ -16,6 +16,14 @@ export const defaultRelatedMaps: RelatedMap[] = [
   },
   {
     imageUrl:
+      "http://ramar.space/wp-content/uploads/2016/09/ramar_new_small.png",
+    url: "https://ramar.space",
+    title: "RAMAR",
+    description:
+      "Research of Ancient Mysteries and Anomalies for Reevauation."
+  },
+  {
+    imageUrl:
       "images/related/antarctica.png",
     url: "https://antarctica.hidden-history.ch",
     title: "Antarctica and beyond",
