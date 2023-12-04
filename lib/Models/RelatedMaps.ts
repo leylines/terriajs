@@ -16,11 +16,19 @@ export const defaultRelatedMaps: RelatedMap[] = [
   },
   {
     imageUrl:
-      "http://ramar.space/wp-content/uploads/2016/09/ramar_new_small.png",
+      "images/related/ramar_small.png",
     url: "https://ramar.space",
     title: "RAMAR",
     description:
       "Research of Ancient Mysteries and Anomalies for Reevauation."
+  },
+  {
+    imageUrl:
+      "images/related/vortexmaps-logo-web.jpg",
+    url: "https://www.vortexmaps.com",
+    title: "Vortex Maps",
+    description:
+      "Maps of vortexes around the world. Learn how to map vortexes in your area."
   },
   {
     imageUrl:
