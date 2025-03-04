@@ -14,6 +14,7 @@ import ProtomapsImageryProvider from "../Map/ImageryProvider/ProtomapsImageryPro
 import { TerriaFeatureData } from "../Models/Feature/FeatureData";
 import TableStyle from "./TableStyle";
 import { isConstantStyleMap } from "./TableStyleMap";
+import isReadOnlyArray from "../Core/isReadOnlyArray";
 
 export default function createRegionMappedImageryProvider(
   style: TableStyle,
@@ -81,7 +82,7 @@ export default function createRegionMappedImageryProvider(
     return (
       (isConstantStyleMap(outlineStyleMap)
         ? outlineStyleMap.style.color
-        : outlineStyleMap.mapValueToStyle(rowNumber ?? -1).color) ??
+        : outlineStyleMap.mapRowIdToStyle(rowNumber ?? -1).color) ??
       defaultOutlineColor
     );
   };
@@ -93,7 +94,7 @@ export default function createRegionMappedImageryProvider(
     return (
       (isConstantStyleMap(outlineStyleMap)
         ? outlineStyleMap.style.width
-        : outlineStyleMap.mapValueToStyle(rowNumber ?? -1).width) ?? 1
+        : outlineStyleMap.mapRowIdToStyle(rowNumber ?? -1).width) ?? 1
     );
   };
 
@@ -147,7 +148,7 @@ const getImageryLayerFilteredRow = action(
     if (!isDefined(rowNumbers)) return;
 
     if (!isDefined(currentTimeRows)) {
-      return Array.isArray(rowNumbers) ? rowNumbers[0] : rowNumbers;
+      return isReadOnlyArray(rowNumbers) ? rowNumbers[0] : rowNumbers;
     }
 
     if (
@@ -155,7 +156,7 @@ const getImageryLayerFilteredRow = action(
       currentTimeRows.includes(rowNumbers)
     ) {
       return rowNumbers;
-    } else if (Array.isArray(rowNumbers)) {
+    } else if (isReadOnlyArray(rowNumbers)) {
       const matchingTimeRows: number[] = rowNumbers.filter((row) =>
         currentTimeRows!.includes(row)
       );
