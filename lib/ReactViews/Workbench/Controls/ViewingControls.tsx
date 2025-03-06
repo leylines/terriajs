@@ -1,4 +1,4 @@
-import { sortBy, uniqBy } from "lodash";
+import { sortBy, uniqBy } from "lodash-es";
 import { action, computed, runInAction, makeObservable } from "mobx";
 import { observer } from "mobx-react";
 import React from "react";
@@ -73,7 +73,7 @@ const ViewingControlMenuButton = styled(RawButton).attrs({
 
   border-radius: 0;
 
-  width: 114px;
+  width: 124px;
   // ensure we support long strings
   min-height: 32px;
   display: block;
