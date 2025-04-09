@@ -4,6 +4,10 @@
 
 - Remove unused d3-array dependency.
 - Update to plugin-error 2.0.1
+- TSify `MenuButton` and convert it to functional component. #7576
+- Convert `WorkbenchItem` to functional component #7564
+- Remove BrowserStack and SauceLabs gulp tasks.
+- Remove `test-travis` gulp task.
 - [The next improvement]
 
 #### 8.9.2 - 2025-03-31
