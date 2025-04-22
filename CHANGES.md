@@ -9,6 +9,13 @@
 - Remove BrowserStack and SauceLabs gulp tasks.
 - Remove `test-travis` gulp task.
 - Allow to modify `lookupCookie` for i18next
+- TSify dropdown and convert it to a functional component. #7577
+- Convert SettingPanel to a functional component. #7589
+- Update html-to-react to 1.7.0
+- Pass explicit refs to css transition component to avoid findDomNode usage. #7590
+- TSify FadeIn component. #7590
+- Convert `ViewingControls` to a functional component. #7574
+- DOMPurify updated to 3.2.5 to fix CVE-2025-26791.
 - [The next improvement]
 
 #### 8.9.2 - 2025-03-31
@@ -32,6 +39,9 @@
 
 - Tweak `ArcGisFeatureServerCatalogItem.imageryProvider` to return undefined until metadata has finished loading
 - Fix scss theming regression by restoring webpack alias
+
+- Remove unused types/rbush dependency.
+- [The next improvement]
 
 #### 8.9.0 - 2025-03-17
 
