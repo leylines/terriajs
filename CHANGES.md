@@ -1,6 +1,15 @@
 # Change Log
 
-#### next release (8.9.4)
+#### next release (8.9.6)
+
+- Fix a bug where `.pmtiles` urls with a query string at the end was not being rendered as PMTILES.
+- [The next improvement]
+
+#### 8.9.5 - 2025-06-03
+
+- Upgrade terriajs-server to version 4.0.2
+
+#### 8.9.4 - 2025-06-03
 
 - Remove regenerator-runtime polyfill as generators are now widely supported. #7615
 - Remove direct usage of core-js polyfills. #7615
@@ -13,7 +22,7 @@
 - Update data-attribution and terms of conditions links to point to terria.io. #7627
 - Hide the related maps button. #7627
 - Change `BingMapSearchProvider` to correctly logs bing search action. #7601
-- [The next improvement]
+- fix `MapboxStyleCatalogItem` scaleFactor bug where tiles are always scaled-up in Cesium. #7639
 
 #### 8.9.3 - 2025-04-24
 
