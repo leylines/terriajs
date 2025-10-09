@@ -1,6 +1,15 @@
 # Change Log
 
-#### next release (8.10.1)
+#### next release (8.11.1)
+
+- [The next improvement]
+
+#### 8.11.0 - 2025-10-09
+
+- **Breaking changes:**
+
+  - Replace unmaintained `svg-sprite-loader` with custom implementation of SvgSprite plugin based on `svg-sprite` package.
+    - New implementation consists of svg sprite loader that loads svgs and svg webpack plugin that compiles them into a single sprite file.
 
 - Fix app crash when switching back and forth between 3D and 2D mode with clipping box enabled.
 - Fix app crash when encountering unsupported WPS input types.
@@ -11,7 +20,10 @@
 - Upgrade babel to the latest version 7.27/7.28
 - Fix analytics tracking for the MapboxSearchProvider.
 - Remove unmaintained @mapbox/geojson-merge dependency and replace it with a simple merge function.
-- [The next improvement]
+- Upgrade Typescript to `^5.9.2`. Also switched the `target` in `tsconfig.json` to `esnext`.
+- Upgrade `mobx` to version `^6.13.7`.
+- Upgraded `terriajs-cesium` to `21.0.0` and `terriajs-cesium-widgets` to `13.2.0`.
+- Fix zooming by mouse wheel in charts #7654
 
 #### 8.10.0 - 2025-07-08
 
