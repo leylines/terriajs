@@ -1,8 +1,15 @@
 # Change Log
 
-#### next release (8.11.3)
+#### next release (8.11.4)
 
+- Capture default timeline state in share links including current time,
+  playback etc.
+- Added support for draping imagery on 3D tilesets. This can be enabled per-tileset by setting the [drapeImagery](https://github.com/TerriaJS/terriajs/blob/23a2bb2b9c1058e1c7141b5e678de51af58da82b/lib/Traits/TraitsClasses/Cesium3dTilesTraits.ts#L195-L201) trait to `true`. Then from the workbench, drag the imagery layers that need to be draped, above the tileset item.
 - [The next improvement]
+
+#### 8.11.3 - 2026-02-02
+
+- Change to OIDC publishing to npm
 
 #### 8.11.2 - 2026-01-15
 
