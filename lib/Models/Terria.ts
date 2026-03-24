@@ -423,7 +423,7 @@ export interface Analytics {
 interface TerriaOptions {
   /**
    * Override detecting base href from document.baseURI.
-   * Used in specs to support routes within Karma spec automation framework
+   * Used in specs to support routes within Browser spec automation framework
    */
   appBaseHref?: string;
   /**
@@ -1239,7 +1239,8 @@ export default class Terria {
         baseMap = baseMapSearch;
       }
     }
-    await this.mainViewer.setBaseMap(baseMap.item as MappableMixin.Instance);
+    if (baseMap?.item)
+      await this.mainViewer.setBaseMap(baseMap.item as MappableMixin.Instance);
   }
 
   get isLoadingInitSources(): boolean {
