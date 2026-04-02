@@ -8,9 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leylines/leylinesjs"
+    "url": "https://github.com/leylines/terriajs"
   },
   "resolutions": {
+    "terriajs-server": "https://github.com/leylines/leylines-server#main",
     "colors": "1.4.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.1",
@@ -181,7 +182,6 @@
     "jasmine-core": "^6.1.0",
     "jsdom": "^17.0.0",
     "jsdom-global": "^3.0.2",
-    "leylines-server": "https://github.com/leylines/leylines-server",
     "minimist": "^1.2.8",
     "msw": "^2.12.9",
     "node-notifier": "^10.0.1",
@@ -190,6 +190,7 @@
     "pretty-quick": "^4.2.2",
     "sass": "^1.81.0",
     "svg-sprite": "^2.0.4",
+    "terriajs-server": "5.0.0-alpha.2",
     "utf-8-validate": "^6.0.3",
     "yaml": "^1.10.0"
   },
