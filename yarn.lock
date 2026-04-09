@@ -7398,6 +7398,29 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+"leylines-server@https://github.com/leylines/leylines-server#main":
+  version "5.0.0-alpha.2"
+  resolved "https://github.com/leylines/leylines-server#904f56a8891507317ef8f39324940339c2b2dffd"
+  dependencies:
+    "@aws-sdk/client-s3" "^3.1017.0"
+    base-x "^5.0.1"
+    basic-auth "^2.0.1"
+    body-parser "^2.2.2"
+    bytes "^3.1.2"
+    compression "^1.8.1"
+    cors "^2.8.6"
+    express "^5.2.1"
+    json5 "^2.2.3"
+    leylines-solids "https://github.com/leylines/leylines-solids#main"
+    morgan "^1.10.1"
+    node-cron "^4.2.1"
+    pg "^8.17.2"
+    proj4-cli-defs "^2.1.0"
+    range_check "^4.1.0"
+    rate-limiter-flexible "^9.1.1"
+    undici "^7.24.6"
+    yargs "^18.0.0"
+
 "leylines-solids@https://github.com/leylines/leylines-solids#main":
   version "1.0.0"
   resolved "https://github.com/leylines/leylines-solids#926b079bb13abf8f2587e29682389588b5690395"
@@ -9838,9 +9861,10 @@ terriajs-html2canvas@1.0.0-alpha.12-terriajs-1:
   dependencies:
     css-line-break "1.0.1"
 
-terriajs-server@5.0.0-alpha.2, "terriajs-server@https://github.com/leylines/leylines-server#main":
+terriajs-server@5.0.0-alpha.2:
   version "5.0.0-alpha.2"
-  resolved "https://github.com/leylines/leylines-server#d4306dd1a43d07de1d70ba17c42be349bfa476c1"
+  resolved "https://registry.yarnpkg.com/terriajs-server/-/terriajs-server-5.0.0-alpha.2.tgz#1b310a50cb720b6be5a80ef91202681c7a492c3e"
+  integrity sha512-acX69/dcSyMRvzmT9ekfvbghmyM8DwFQ2ehNRwqxCZQvaTuYiWLmlXgxzyaKOc8ZXsXs97W6D0AckDPiCjS3+Q==
   dependencies:
     "@aws-sdk/client-s3" "^3.1017.0"
     base-x "^5.0.1"
@@ -9851,10 +9875,7 @@ terriajs-server@5.0.0-alpha.2, "terriajs-server@https://github.com/leylines/leyl
     cors "^2.8.6"
     express "^5.2.1"
     json5 "^2.2.3"
-    leylines-solids "https://github.com/leylines/leylines-solids#main"
     morgan "^1.10.1"
-    node-cron "^4.2.1"
-    pg "^8.17.2"
     proj4-cli-defs "^2.1.0"
     range_check "^4.1.0"
     rate-limiter-flexible "^9.1.1"
